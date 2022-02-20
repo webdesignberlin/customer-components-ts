@@ -29,16 +29,19 @@ const props = defineProps<Props>()
 console.log(validateValueWithList('smalli', Object.values(Modifier))); */
 
 const props = defineProps({
+  /* modifier: {
+    type: String as () => Modifier,
+  }, */
   modifier: {
     /* validator(value: Modifier | Modifier[]) {
       // The value must match one of these strings
       return validateValueWithList('smalli', Object.values(Modifier));
     } */
-    type: [String, Array] as PropType<Modifier | Modifier[]>,
+    type: [Array, String] as PropType<Modifier[] | Modifier>,
     // type: String as PropType<Modifier>,
     // default: null,
     // validator: (value: Modifier | Modifier[]) => validateValueWithList(value, Object.values(Modifier)),
-    validator: (value: string | string[]) => validateValueWithList(value, Object.values(Modifier)),
+    // validator: (value: Modifier[] | Modifier) => validateValueWithList(value, ModifierList),
   },
 });
 

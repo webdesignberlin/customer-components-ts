@@ -7,7 +7,7 @@ import FitxButton from '@/lib-components/fitx-button'
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <fitx-button
-    :modifier="['small']" />
+    :modifier="'small'" />
 </template>
 
 <style>
