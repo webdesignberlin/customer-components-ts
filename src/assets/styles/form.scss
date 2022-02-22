@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains global form declarations.
+// -----------------------------------------------------------------------------
+
+@mixin input-vars() {
+  --form-input-font-size: 1.8rem;
+  --form-input-border-size: 0.1rem;
+  --form-input-height: 6rem;
+  --form-input-padding: 1.8rem;
+  --form-input-border-radius: 0.8rem;
+}

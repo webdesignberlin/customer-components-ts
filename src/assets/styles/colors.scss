@@ -1,0 +1,102 @@
+// -----------------------------------------------------------------------------
+// This file contains all color declarations.
+// -----------------------------------------------------------------------------
+
+$fitx-color-anthracite: rgb(24, 29, 30); // #181d1e
+$fitx-color-anthracite-1: rgb(28, 34, 35); // #1c2223
+$fitx-color-anthracite-2: rgb(38, 43, 44); // #262b2c
+$fitx-color-anthracite-3: rgb(45, 49, 50); // #2d3132
+$fitx-color-anthracite-4: rgb(48, 58, 61); // #303a3d
+$fitx-color-anthracite-5: rgb(100, 122, 132); // #647A84
+
+$fitx-color-blue: rgb(36, 53, 63); // new: #24353f - old: #35484f, rgb(53,72,79)
+
+$fitx-color-orange: rgb(237, 106, 18); // #ed6a12
+$fitx-color-orange-1: rgb(241, 136, 65); // #f18841
+$fitx-color-orange-2: rgb(246, 172, 111); // #f6ac6f
+$fitx-color-orange-3: rgb(248, 237, 230); // f8ede6
+
+$fitx-color-white: rgb(255, 255, 255); // #ffffff
+$fitx-color-white-1: rgb(244, 242, 239); // #f4f2ef
+$fitx-color-white-2: rgb(235, 234, 232); // #ebeae8
+
+$fitx-color-coal: rgb(54, 54, 54); // #363636
+$fitx-color-carbon: rgb(68, 68, 68); // #444
+$fitx-color-graphite: rgb(113, 113, 113); // #717171
+$fitx-color-cement: rgb(153, 153, 153); // #999
+$fitx-color-stone: rgb(181, 181, 181); // #b5b5b5
+$fitx-color-silver: rgb(192, 192, 192); // #c0c0c0
+$fitx-color-steel: rgb(204, 204, 204); // #ccc
+$fitx-color-plumb: rgb(221, 221, 221); // #ddd
+$fitx-color-ash: rgb(229, 229, 229); // #e5e5e5
+$fitx-color-smoke: rgb(238, 238, 238); // #eee
+$fitx-color-chalk: rgb(245, 245, 245); // #f5f5f5
+
+$fitx-color-func-success: rgb(39, 174, 96); // #27ae60
+$fitx-color-func-success-1-light: rgb(212, 239, 223); // #d4efdf
+$fitx-color-func-success-1-dark: rgb(27, 59, 43); // #183b2b
+
+$fitx-color-func-attention: rgb(245, 163, 35); // #F5A323
+$fitx-color-func-attention-1-light: rgb(253, 237, 221); // #FDEDD4
+$fitx-color-func-attention-1-dark: rgb(46, 42, 30); // #2E2A1E
+
+$fitx-color-func-error: rgb(232, 54, 35); // #E83623
+$fitx-color-func-error-1-light: rgb(254, 245, 244); // #FEF5F4
+$fitx-color-func-error-1-dark: rgb(44, 31, 30); // #2C1F1E
+
+@mixin brand-colors() {
+  --brand-color-anthracite: #{$fitx-color-anthracite};
+  --brand-color-anthracite-1: #{$fitx-color-anthracite-1};
+  --brand-color-anthracite-2: #{$fitx-color-anthracite-2};
+  --brand-color-anthracite-3: #{$fitx-color-anthracite-3};
+  --brand-color-anthracite-4: #{$fitx-color-anthracite-4};
+  --brand-color-anthracite-5: #{$fitx-color-anthracite-5};
+
+  --brand-color-blue: #{$fitx-color-blue};
+
+  --brand-color-orange: #{$fitx-color-orange};
+  --brand-color-orange-1: #{$fitx-color-orange-1};
+  --brand-color-orange-2: #{$fitx-color-orange-2};
+  --brand-color-orange-3: #{$fitx-color-orange-3};
+
+  --brand-color-white: #{$fitx-color-white};
+  --brand-color-white-1: #{$fitx-color-white-1};
+  --brand-color-white-2: #{$fitx-color-white-2};
+
+  /**
+    Alias Names for Styleguide
+   */
+  --primary-brand-color-anthracite: #{$fitx-color-anthracite};
+  --primary-brand-color-blue: #{$fitx-color-blue};
+  --primary-brand-color-orange: #{$fitx-color-orange};
+  --primary-brand-color-white: #{$fitx-color-white};
+
+  /**
+    Gray Tones, main usage for forms
+   */
+  --brand-color-gray-coal: #{$fitx-color-coal};
+  --brand-color-gray-carbon: #{$fitx-color-carbon};
+  --brand-color-gray-graphite: #{$fitx-color-graphite};
+  --brand-color-gray-cement: #{$fitx-color-cement};
+  --brand-color-gray-stone: #{$fitx-color-stone};
+  --brand-color-gray-silver: #{$fitx-color-silver};
+  --brand-color-gray-steel: #{$fitx-color-steel};
+  --brand-color-gray-plumb: #{$fitx-color-plumb};
+  --brand-color-gray-ash: #{$fitx-color-ash};
+  --brand-color-gray-smoke: #{$fitx-color-smoke};
+  --brand-color-gray-chalk: #{$fitx-color-chalk};
+}
+
+@mixin functional-colors() {
+  --functional-color-success: #{$fitx-color-func-success};
+  --functional-color-success-1-light: #{$fitx-color-func-success-1-light};
+  --functional-color-success-1-dark: #{$fitx-color-func-success-1-dark};
+
+  --functional-color-attention: #{$fitx-color-func-attention};
+  --functional-color-attention-1-light: #{$fitx-color-func-attention-1-light};
+  --functional-color-attention-1-dark: #{$fitx-color-func-attention-1-dark};
+
+  --functional-color-error: #{$fitx-color-func-error};
+  --functional-color-error-1-light: #{$fitx-color-func-error-1-light};
+  --functional-color-error-1-dark: #{$fitx-color-func-error-1-dark};
+}

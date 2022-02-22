@@ -23,16 +23,15 @@ const props = defineProps({
 const {
   getModifierClasses,
 } = useModifier();
-console.log(props.modifier);
-
-defineEmits(['counter-update']);
 </script>
 
 <template>
   <component
     :is="tag"
-    v-bind="$attrs"
-    :class="[ getModifierClasses('btn', modifier), { 'btn--dark' : isDarkMode } ]"
+    :class="[
+      getModifierClasses('btn', modifier),
+      { 'btn--dark' : isDarkMode },
+    ]"
     class="btn">
     <slot>
       {{ text }}
@@ -42,8 +41,8 @@ defineEmits(['counter-update']);
 </template>
 
 <style lang="scss" scoped>
-$green: green;
-h1 {
-    background-color: $green;
+@use '~@/assets/styles/mixin-reset.scss' as reset;
+.btn {
+  @include reset.btn-reset();
 }
 </style>

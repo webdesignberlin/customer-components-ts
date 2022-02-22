@@ -12,8 +12,8 @@ type Modifiers = string | string[];
  * getModifierClass: (function(*, *): string)}}
  */
 export default function useModifier() {
-  const componentModifier = ref(null);
-  const refComponent = ref<HTMLDivElement>();
+  /* const componentModifier = ref(null);
+  const refComponent = ref<HTMLDivElement>(); */
   const getModifierClass = (defaultClass: DefaultClass, modifier: Modifiers) => (`${defaultClass}--${modifier}`);
 
   /**
@@ -34,11 +34,11 @@ export default function useModifier() {
         return `${defaultClass}--${mod}`;
       }
       return null;
-    });
+    }).filter((Boolean));
   };
   return {
-    componentModifier,
-    refComponent,
+    /* componentModifier,
+    refComponent, */
     getModifierClass,
     getModifierClasses,
   };

@@ -1,0 +1,36 @@
+@mixin list-unstyled() {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin btn-reset() {
+  border: none;
+
+  /**
+   * Change the font styles in all browsers.
+   */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+
+  /**
+   * Remove the margin in Firefox and Safari.
+   */
+  margin: 0;
+
+  /**
+   * Show the overflow in IE and Edge.
+   */
+  overflow: visible;
+
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   */
+  text-transform: none;
+
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  -webkit-appearance: button;
+}

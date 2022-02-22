@@ -1,9 +1,14 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import {resolve} from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+  },
   resolve: {
     alias: [
       // @/xxxx => src/xxxx
@@ -15,7 +20,7 @@ export default defineConfig({
       {
         find: /^#\/(.+)/,
         replacement: `${resolve(__dirname, 'types')}/$1`
-      }
+      },
     ]
 
   },

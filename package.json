@@ -6,7 +6,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "sass": "^1.49.7",
@@ -23,12 +24,16 @@
     "@typescript-eslint/parser": "^5.0.0",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/eslint-config-typescript": "^8.0.0",
+    "@vue/test-utils": "^2.0.0-rc.18",
     "babel-loader": "^8.2.2",
+    "c8": "^7.11.0",
     "eslint": "^8.0.1",
     "eslint-plugin-vue": "^7.19.1",
+    "happy-dom": "latest",
     "storybook-builder-vite": "^0.1.15",
-    "typescript": "^4.4.3",
+    "typescript": "^4.5.5",
     "vite": "^2.6.4",
+    "vitest": "latest",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.3.0"
   }

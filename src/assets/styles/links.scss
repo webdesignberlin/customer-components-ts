@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains global Link declarations.
+// -----------------------------------------------------------------------------
+
+@mixin text-links() {
+  --link-text-color: var(--brand-color-orange);
+  --link-text-color-hover: var(--brand-color-orange-1);
+  color: var(--link-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &--fake-hover {
+    color: var(--link-text-color-hover);
+    text-decoration: underline;
+  }
+}
+
+@mixin text-links-decent($theme: light) {
+  --link-text-decent-color: var(--brand-color-anthracite);
+  --link-text-decent-color-hover: var(--brand-color-gray-carbon);
+  @if $theme == dark {
+    --link-text-decent-color: #fff;
+    --link-text-decent-color-hover: var(--brand-color-white-2);
+  }
+  &--dark {
+    --link-text-decent-color: #fff;
+    --link-text-decent-color-hover: var(--brand-color-white-2);
+  }
+  color: var(--link-text-decent-color);
+  text-decoration: none;
+
+  &:hover,
+  &--fake-hover {
+    color: var(--link-text-decent-color-hover);
+    text-decoration: underline;
+  }
+}
